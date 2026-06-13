@@ -1,0 +1,50 @@
+{
+  "items": [
+    {
+      "title": "Buzzr — real-time AI quiz platform",
+      "href": "https://buzzr.silive.in/",
+      "description": "Generate a full quiz from one AI prompt, then host it live — real-time gameplay and leaderboards over WebSockets. Battle-tested with ~200 concurrent players at a college event.",
+      "tags": ["Next.js", "Socket.IO", "Prisma", "Postgres"],
+      "visualVariant": "pv-1",
+      "image": {
+        "src": "https://res.cloudinary.com/dclms6pnb/image/upload/v1725019305/bkny9rwaur4d149qh7i6.png",
+        "alt": "Buzzr — real-time AI quiz platform"
+      }
+    },
+    {
+      "title": "Tweeter — full-stack social platform",
+      "href": "https://tweeter-frontend-sooty.vercel.app/login",
+      "description": "A Twitter-style social app with OAuth, customizable profiles, tweets, and real-time chat over WebSockets — designed and built across the full stack.",
+      "tags": ["React", "Redux", "Node.js", "MongoDB"],
+      "visualVariant": "pv-2",
+      "image": {
+        "src": "https://user-images.githubusercontent.com/104606182/216806589-f8b0da49-5e79-4acf-89b3-1bd48c2735d4.PNG",
+        "alt": "Tweeter — full-stack social platform"
+      }
+    },
+    {
+      "title": "Scrolls — national paper-submission platform",
+      "href": "https://scrollsakgec.in/",
+      "description": "A national-level platform for technical paper submissions — 600+ registrations, 200+ teams, and 150+ synopsis submissions, secured with Google v3 Captcha.",
+      "tags": ["React", "Redux Toolkit", "reCAPTCHA v3"],
+      "visualVariant": "pv-3",
+      "glyph": "Scrolls",
+      "image": {
+        "src": "/assets/scrolls.png",
+        "alt": "Scrolls — national paper-submission platform"
+      }
+    },
+    {
+      "title": "Edumate — school management ERP",
+      "href": "https://github.com/Sanikagoyal28/Edumate",
+      "description": "A three-panel ERP for schools — admin, faculty, and student portals with dashboards, attendance tracking, events, and feedback.",
+      "tags": ["React", "Socket.IO", "Node.js"],
+      "visualVariant": "pv-4",
+      "glyph": "Edumate",
+      "image": {
+        "src": "/assets/edumate.png",
+        "alt": "Edumate — school management ERP"
+      }
+    }
+  ]
+}

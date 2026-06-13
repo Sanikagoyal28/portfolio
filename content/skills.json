@@ -1,0 +1,36 @@
+{
+  "categories": [
+    {
+      "icon": "⌨️",
+      "title": "Languages",
+      "tags": ["TypeScript", "JavaScript", "C++", "C", "HTML", "CSS"]
+    },
+    {
+      "icon": "⚛️",
+      "title": "Frameworks & Technologies",
+      "tags": [
+        "React.js",
+        "Next.js",
+        "Electron",
+        "React Native",
+        "Redux / Toolkit",
+        "Node.js",
+        "Express.js",
+        "Socket.IO",
+        "SSE",
+        "Prisma",
+        "Tailwind"
+      ]
+    },
+    {
+      "icon": "🗄️",
+      "title": "Databases",
+      "tags": ["PostgreSQL", "MongoDB", "MySQL"]
+    },
+    {
+      "icon": "🛠️",
+      "title": "Design & Tools",
+      "tags": ["Figma", "Docker", "Git", "VS Code"]
+    }
+  ]
+}

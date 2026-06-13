@@ -1,0 +1,22 @@
+{
+  "paragraphs": [
+    [
+      { "text": "I'm a frontend engineer who likes working close to hard problems — " },
+      { "text": "audio pipelines inside browser extensions, streaming AI interfaces, SDKs other teams build on", "emphasis": true },
+      { "text": "." }
+    ],
+    [
+      { "text": "At Eka.care I work on products doctors rely on every day, which keeps the bar for reliability and UX uncompromisingly high. I think the best frontend work in the AI era is about turning unpredictable, streaming model output into interfaces that feel instant, editable, and trustworthy." }
+    ],
+    [
+      { "text": "B.Tech in Computer Science", "emphasis": true },
+      { "text": " — Ajay Kumar Garg Engineering College (AKTU), Class of 2025 · CGPA 9.0/10." }
+    ]
+  ],
+  "facts": [
+    { "icon": "🏆", "text": "Top-5 finalist — PARADIGM E-Summit National Hackathon" },
+    { "icon": "⚡", "text": "Finalist — RedBricks Hackathon, Ashoka University" },
+    { "icon": "🧠", "text": "250+ DSA problems solved on LeetCode" },
+    { "icon": "🚀", "text": "Led a 45-member college software incubator" }
+  ]
+}

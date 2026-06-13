@@ -1,0 +1,80 @@
+{
+  "items": [
+    {
+      "role": "Software Engineer (Frontend)",
+      "company": "Eka.care",
+      "period": "Dec 2024 — Present",
+      "paragraphs": [
+        [
+          { "text": "Building " },
+          { "text": "EkaScribe", "emphasis": true },
+          { "text": ", an AI voice-to-prescription product spanning a web app, Windows/macOS desktop app, and a Chrome extension " },
+          { "text": "(5k+ installs)", "highlight": true },
+          { "text": " — serving " },
+          { "text": "10k+ active users", "highlight": true },
+          { "text": " with over " },
+          { "text": "1M sessions", "highlight": true },
+          { "text": "." }
+        ],
+        [
+          { "text": "Architected the open-sourced " },
+          { "text": "Eka JS SDK", "emphasis": true },
+          { "text": " powering EkaScribe — adopted by the " },
+          { "text": "National Informatics Centre (NIC)", "emphasis": true },
+          { "text": ", CDAC, and private healthtech companies — and designed the " },
+          { "text": "Med Scribe Alliance SDK", "emphasis": true },
+          { "text": ", an open Scribe-EMR protocol emitting FHIR-standard output so any scribe engine can integrate with any EMR." }
+        ],
+        [
+          { "text": "Engineered the extension's audio pipeline with voice-activity detection and off-main-thread chunked uploads, and currently building " },
+          { "text": "AG-UI", "emphasis": true },
+          { "text": " — rendering streamed AI-agent events into live, editable interfaces with a Tiptap-based template editor for doctors." }
+        ]
+      ],
+      "tags": ["React", "TypeScript", "Electron", "Chrome Extensions", "Web Audio", "SSE", "Tiptap"]
+    },
+    {
+      "role": "Frontend Developer (Intern)",
+      "company": "Pythonist India",
+      "period": "Aug 2023 — Apr 2024 · Remote",
+      "paragraphs": [
+        [
+          { "text": "Built a multi-store e-commerce platform for the Saudi market with full English/Arabic bilingual support and a Google Maps–based address flow that " },
+          { "text": "cut delivery errors by 40%", "highlight": true },
+          { "text": "." }
+        ]
+      ],
+      "tags": ["React", "Tailwind", "Node.js", "i18n", "Maps API"]
+    },
+    {
+      "role": "React Developer (Intern)",
+      "company": "Stellar Innovation",
+      "period": "Jun 2023 — Jul 2023 · Remote, Qatar",
+      "paragraphs": [
+        [
+          { "text": "Developed the company website's interface in " },
+          { "text": "ReactJS", "emphasis": true },
+          { "text": " with a seamless, responsive user experience, collaborating on design implementation from " },
+          { "text": "Figma", "emphasis": true },
+          { "text": " for a visually cohesive online presence." }
+        ]
+      ],
+      "tags": ["React", "Bootstrap", "Figma"]
+    },
+    {
+      "role": "Web Developer",
+      "company": "Software Incubator (SDC-SI)",
+      "period": "Nov 2022 — Jul 2025",
+      "paragraphs": [
+        [
+          { "text": "College R&D center with a " },
+          { "text": "40+ member team", "highlight": true },
+          { "text": " — contributed to projects for the college and external partners, and as coordinator organized workshops on DSA and competitive programming for " },
+          { "text": "150+ students", "highlight": true },
+          { "text": ", including a national-level competition platform." }
+        ]
+      ],
+      "tags": ["React", "HTML5", "CSS", "JavaScript"]
+    }
+  ]
+}
