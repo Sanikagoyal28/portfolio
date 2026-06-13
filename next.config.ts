@@ -8,6 +8,9 @@ const nextConfig: NextConfig = {
   // Emit a fully static site into `out/` for GitHub Pages hosting.
   output: "export",
   basePath,
+  // Exposed to the client so we can prefix local asset URLs: next/image with
+  // `unoptimized` does NOT prepend basePath to image `src` (Next.js gotcha).
+  env: { NEXT_PUBLIC_BASE_PATH: basePath },
   images: {
     // Static export has no server, so the default image optimizer is disabled.
     unoptimized: true,

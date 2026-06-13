@@ -2,6 +2,7 @@ import Image from "next/image";
 import Reveal from "@/components/common/Reveal";
 import RichText from "@/components/common/RichText";
 import { TagList } from "@/components/common/Tag";
+import { assetPath } from "@/lib/assetPath";
 import type { ProjectItem, ProjectLink } from "@/data/types";
 import ProjectLinkIcon from "./ProjectLinkIcon";
 
@@ -28,7 +29,7 @@ export default function ProjectCard({ project, delay }: ProjectCardProps) {
         {project.glyph && <div className="proj-glyph">{project.glyph}</div>}
         {project.image && (
           <Image
-            src={project.image.src}
+            src={assetPath(project.image.src)}
             alt={project.image.alt}
             fill
             sizes="(max-width: 800px) 100vw, 50vw"
