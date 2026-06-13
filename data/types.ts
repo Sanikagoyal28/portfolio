@@ -78,17 +78,36 @@ export interface ProjectImage {
   alt: string;
 }
 
+/** A project's outbound link, rendered as an icon in the card header. */
+export interface ProjectLink {
+  type: "github" | "live";
+  href: string;
+}
+
 export interface ProjectItem {
   title: string;
-  href: string;
   description: string;
+  /** Bullet highlights; each is a rich-text run so words can be emphasized. */
+  highlights: TextSegment[][];
   tags: string[];
   /** Background gradient variant: "pv-1" | "pv-2" | "pv-3" | "pv-4". */
   visualVariant: string;
+  /** Destination the visual (thumbnail) links to. */
+  visualHref: string;
+  /** GitHub / live links shown as icons next to the title. */
+  links: ProjectLink[];
   /** Optional thumbnail; falls back to the glyph when absent. */
   image?: ProjectImage;
   /** Optional decorative wordmark shown behind/instead of the image. */
   glyph?: string;
+}
+
+export interface EducationItem {
+  icon: string;
+  degree: string;
+  period: string;
+  school: string;
+  gpa?: string;
 }
 
 export interface Contact {

@@ -1,12 +1,19 @@
 {
   "paragraphs": [
     [
-      { "text": "I'm a frontend engineer who likes working close to hard problems — " },
-      { "text": "audio pipelines inside browser extensions, streaming AI interfaces, SDKs other teams build on", "emphasis": true },
-      { "text": "." }
+      { "text": "I'm Sanika — a " },
+      { "text": "frontend engineer based in Bangalore", "emphasis": true },
+      { "text": " who builds fast, reliable interfaces and enjoys taking on the more challenging parts of a product: real-time systems, AI-driven experiences, and SDKs other teams build on." }
     ],
     [
-      { "text": "At Eka.care I work on products doctors rely on every day, which keeps the bar for reliability and UX uncompromisingly high. I think the best frontend work in the AI era is about turning unpredictable, streaming model output into interfaces that feel instant, editable, and trustworthy." }
+      { "text": "I'm currently at " },
+      { "text": "Eka.care", "emphasis": true },
+      { "text": ", building AI-powered healthcare tools used by thousands of doctors every day. Before that, " },
+      { "text": "internships and side projects", "emphasis": true },
+      { "text": " took me across e-commerce, social, and real-time apps — comfortable across the stack, but most at home in the frontend." }
+    ],
+    [
+      { "text": "I care about interfaces that feel effortless and code that's easy to live with. In the AI era, the frontend work I find most interesting is shaping live, streaming model output into something that feels instant, editable, and trustworthy." }
     ],
     [
       { "text": "B.Tech in Computer Science", "emphasis": true },

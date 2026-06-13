@@ -10,10 +10,10 @@ export default function Hero() {
     <header className="wrap">
       <div className="hero-grid">
         <div>
-          <Reveal className="status">
+          <div className="status">
             <span className="dot" />
             {profile.status}
-          </Reveal>
+          </div>
 
           <Reveal as="h1" delay={1}>
             {profile.firstName}

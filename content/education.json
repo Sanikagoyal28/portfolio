@@ -1,0 +1,18 @@
+{
+  "items": [
+    {
+      "icon": "🎓",
+      "degree": "B.Tech, Computer Science",
+      "period": "2021 — 2025",
+      "school": "Ajay Kumar Garg Engineering College, AKTU",
+      "gpa": "CGPA 9.0/10"
+    },
+    {
+      "icon": "🏫",
+      "degree": "Senior Secondary (PCM)",
+      "period": "2021",
+      "school": "Maharishi Vidya Mandir",
+      "gpa": "CGPA 9.8/10"
+    }
+  ]
+}

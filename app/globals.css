@@ -34,6 +34,8 @@
   --shadow-nav: 0 8px 32px rgba(20, 25, 40, 0.08);
   --shadow-card: 0 24px 60px rgba(20, 25, 40, 0.12);
   --shadow-rest: 0 1px 3px rgba(20, 25, 40, 0.05), 0 14px 36px rgba(20, 25, 40, 0.07);
+  /* opaque chip background so the dark code card never bleeds through */
+  --chip-bg: #ffffff;
   /* font tokens are wired to the next/font CSS variables in layout.tsx */
   --font-display: var(--font-space-grotesk), sans-serif;
   --font-body: var(--font-inter), sans-serif;
@@ -67,6 +69,7 @@
   --shadow-nav: 0 8px 32px rgba(0, 0, 0, 0.35);
   --shadow-card: 0 24px 60px rgba(0, 0, 0, 0.45);
   --shadow-rest: none;
+  --chip-bg: #0d0f16;
 }
 
 /* =====================================================================
@@ -545,6 +548,71 @@ h2 {
   transform: translateY(-2px);
 }
 
+/* ================= EDUCATION ================= */
+.edu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.edu-card {
+  display: flex;
+  gap: 22px;
+  align-items: flex-start;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 26px 30px;
+  background: var(--surface);
+  backdrop-filter: blur(8px);
+  box-shadow: var(--shadow-rest);
+  transition: border-color 0.3s, transform 0.3s;
+}
+.edu-card:hover {
+  border-color: var(--border-hi);
+  transform: translateX(6px);
+}
+.edu-ico {
+  flex-shrink: 0;
+  width: 46px;
+  height: 46px;
+  border-radius: 13px;
+  display: grid;
+  place-items: center;
+  font-size: 1.2rem;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+}
+.edu-main {
+  flex: 1;
+}
+.edu-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+.edu-degree {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+.edu-period {
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  color: var(--faint);
+  white-space: nowrap;
+}
+.edu-school {
+  color: var(--muted);
+  font-size: 0.92rem;
+  margin-top: 4px;
+}
+.edu-school .gpa {
+  color: var(--teal);
+  font-weight: 600;
+}
+
 /* ================= SKILLS ================= */
 .skills-grid {
   display: grid;
@@ -601,7 +669,6 @@ h2 {
   border-radius: 24px;
   overflow: hidden;
   background: var(--surface);
-  text-decoration: none;
   color: inherit;
   box-shadow: var(--shadow-rest);
   transition: border-color 0.3s, transform 0.35s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.35s;
@@ -618,6 +685,9 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+a.proj-visual {
+  cursor: pointer;
 }
 .proj-visual::after {
   content: "";
@@ -678,8 +748,8 @@ h2 {
 .proj-title {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
-  gap: 10px;
+  align-items: center;
+  gap: 12px;
 }
 .proj h3 {
   font-family: var(--font-display);
@@ -687,23 +757,62 @@ h2 {
   font-weight: 600;
   letter-spacing: -0.02em;
 }
-.proj-arrow {
-  color: var(--faint);
-  transition: transform 0.3s, color 0.3s;
-  font-size: 1.05rem;
+.proj-links {
+  display: flex;
+  gap: 10px;
+  flex-shrink: 0;
 }
-.proj:hover .proj-arrow {
+.proj-links a {
+  color: var(--faint);
+  display: grid;
+  place-items: center;
+  transition: color 0.25s, transform 0.25s;
+}
+.proj-links a svg {
+  width: 19px;
+  height: 19px;
+  fill: currentColor;
+  display: block;
+}
+.proj-links a:hover {
   color: var(--teal);
-  transform: translate(4px, -4px);
+  transform: translateY(-2px);
 }
 .proj p {
   color: var(--muted);
   font-size: 0.9rem;
   margin-top: 10px;
+}
+.hl-list {
+  list-style: none;
+  margin: 16px 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
   flex: 1;
 }
+.hl-list li {
+  position: relative;
+  padding-left: 22px;
+  font-size: 0.85rem;
+  color: var(--muted);
+  line-height: 1.45;
+}
+.hl-list li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--teal);
+  font-weight: 600;
+}
+.hl-list li strong {
+  color: var(--text);
+  font-weight: 600;
+}
 .proj .tags {
-  margin-top: 18px;
+  margin-top: 20px;
 }
 
 /* ================= ABOUT ================= */
@@ -871,9 +980,7 @@ h2 {
   font-weight: 600;
   padding: 9px 16px;
   border-radius: 999px;
-  background: var(--nav-bg);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  background: var(--chip-bg);
   border: 1px solid var(--border);
   box-shadow: var(--shadow-nav);
   color: var(--text);

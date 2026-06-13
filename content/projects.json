@@ -2,49 +2,104 @@
   "items": [
     {
       "title": "Buzzr — real-time AI quiz platform",
-      "href": "https://buzzr.silive.in/",
-      "description": "Generate a full quiz from one AI prompt, then host it live — real-time gameplay and leaderboards over WebSockets. Battle-tested with ~200 concurrent players at a college event.",
-      "tags": ["Next.js", "Socket.IO", "Prisma", "Postgres"],
       "visualVariant": "pv-1",
+      "visualHref": "https://buzzr.silive.in/",
       "image": {
         "src": "https://res.cloudinary.com/dclms6pnb/image/upload/v1725019305/bkny9rwaur4d149qh7i6.png",
         "alt": "Buzzr — real-time AI quiz platform"
-      }
+      },
+      "links": [
+        { "type": "github", "href": "https://github.com/Sanikagoyal28/buzzr" },
+        { "type": "live", "href": "https://buzzr.silive.in/" }
+      ],
+      "description": "Build a quiz your way — write each question by hand, or let AI draft the whole set from a single prompt. Host it live and the leaderboard reshuffles the moment someone buzzes in.",
+      "highlights": [
+        [
+          { "text": "Create quizzes " },
+          { "text": "manually or with an AI prompt", "emphasis": true }
+        ],
+        [
+          { "text": "Live play & scoring over Socket.IO, held " },
+          { "text": "~200 players at once", "emphasis": true }
+        ],
+        [{ "text": "Google OAuth; Postgres + Prisma backend on AWS EC2" }]
+      ],
+      "tags": ["Next.js", "TypeScript", "Socket.IO", "Prisma", "Postgres"]
     },
     {
       "title": "Tweeter — full-stack social platform",
-      "href": "https://tweeter-frontend-sooty.vercel.app/login",
-      "description": "A Twitter-style social app with OAuth, customizable profiles, tweets, and real-time chat over WebSockets — designed and built across the full stack.",
-      "tags": ["React", "Redux", "Node.js", "MongoDB"],
       "visualVariant": "pv-2",
+      "visualHref": "https://tweeter-frontend-sooty.vercel.app/login",
       "image": {
         "src": "https://user-images.githubusercontent.com/104606182/216806589-f8b0da49-5e79-4acf-89b3-1bd48c2735d4.PNG",
         "alt": "Tweeter — full-stack social platform"
-      }
+      },
+      "links": [
+        { "type": "github", "href": "https://github.com/Sanikagoyal28/Tweeter" },
+        { "type": "live", "href": "https://tweeter-frontend-sooty.vercel.app/login" }
+      ],
+      "description": "A Twitter-style social app with OAuth, customizable profiles, tweets, and real-time chat over WebSockets — designed and built across the full stack.",
+      "highlights": [
+        [
+          { "text": "Live DMs", "emphasis": true },
+          { "text": " over WebSockets, no refresh needed" }
+        ],
+        [{ "text": "Google OAuth + email sign-in and a following graph" }],
+        [{ "text": "React/Redux front end, Node + Express + MongoDB API" }]
+      ],
+      "tags": ["React", "Redux", "Socket.IO", "Node.js", "MongoDB"]
     },
     {
       "title": "Scrolls — national paper-submission platform",
-      "href": "https://scrollsakgec.in/",
-      "description": "A national-level platform for technical paper submissions — 600+ registrations, 200+ teams, and 150+ synopsis submissions, secured with Google v3 Captcha.",
-      "tags": ["React", "Redux Toolkit", "reCAPTCHA v3"],
       "visualVariant": "pv-3",
       "glyph": "Scrolls",
+      "visualHref": "https://scrollsakgec.in/",
       "image": {
         "src": "/assets/scrolls.png",
         "alt": "Scrolls — national paper-submission platform"
-      }
+      },
+      "links": [
+        { "type": "github", "href": "https://github.com/Sanikagoyal28/scrolls" },
+        { "type": "live", "href": "https://scrollsakgec.in/" }
+      ],
+      "description": "A national-level platform for technical paper submissions — the official registration and submission portal for AKGEC's national paper presentation, used by real students under real deadlines.",
+      "highlights": [
+        [
+          { "text": "Drew " },
+          { "text": "600+ registrations", "emphasis": true },
+          { "text": " and 200+ competing teams" }
+        ],
+        [
+          { "text": "Handled " },
+          { "text": "150+ paper submissions", "emphasis": true },
+          { "text": " end to end" }
+        ],
+        [{ "text": "reCAPTCHA v3 to keep bots and spam out" }]
+      ],
+      "tags": ["React", "Redux Toolkit", "reCAPTCHA v3"]
     },
     {
       "title": "Edumate — school management ERP",
-      "href": "https://github.com/Sanikagoyal28/Edumate",
-      "description": "A three-panel ERP for schools — admin, faculty, and student portals with dashboards, attendance tracking, events, and feedback.",
-      "tags": ["React", "Socket.IO", "Node.js"],
       "visualVariant": "pv-4",
       "glyph": "Edumate",
+      "visualHref": "https://github.com/Sanikagoyal28/Edumate",
       "image": {
         "src": "/assets/edumate.png",
         "alt": "Edumate — school management ERP"
-      }
+      },
+      "links": [
+        { "type": "github", "href": "https://github.com/Sanikagoyal28/Edumate" }
+      ],
+      "description": "A school management ERP with three role-based panels — admin, faculty, and students — each behind its own login, sharing the data that runs a campus day to day.",
+      "highlights": [
+        [
+          { "text": "Role-based dashboards", "emphasis": true },
+          { "text": " tailored to each panel" }
+        ],
+        [{ "text": "Attendance, events, updates, and feedback in one place" }],
+        [{ "text": "Live updates pushed over Socket.IO" }]
+      ],
+      "tags": ["React", "Socket.IO", "JavaScript"]
     }
   ]
 }

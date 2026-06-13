@@ -10,7 +10,7 @@ const staggerDelay = (i: number) =>
 export default function Skills() {
   return (
     <section id="skills" className="wrap">
-      <SectionHeader num="03" title="Skills" />
+      <SectionHeader num="04" title="Skills" />
       <div className="skills-grid">
         {skills.map((category, i) => (
           <Reveal key={category.title} className="skill-card" delay={staggerDelay(i)}>
