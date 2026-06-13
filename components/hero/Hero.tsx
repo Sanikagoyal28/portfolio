@@ -38,23 +38,25 @@ export default function Hero() {
             >
               Resume ↓
             </a>
-            {profile.socials.map((social) => {
-              const isMail = social.href.startsWith("mailto:");
-              return (
-                <a
-                  key={social.label}
-                  className="icon-btn"
-                  href={social.href}
-                  aria-label={social.label}
-                  title={social.label}
-                  {...(isMail
-                    ? {}
-                    : { target: "_blank", rel: "noreferrer" })}
-                >
-                  <SocialIcon icon={social.icon} />
-                </a>
-              );
-            })}
+            <div className="hero-socials">
+              {profile.socials.map((social) => {
+                const isMail = social.href.startsWith("mailto:");
+                return (
+                  <a
+                    key={social.label}
+                    className="icon-btn"
+                    href={social.href}
+                    aria-label={social.label}
+                    title={social.label}
+                    {...(isMail
+                      ? {}
+                      : { target: "_blank", rel: "noreferrer" })}
+                  >
+                    <SocialIcon icon={social.icon} />
+                  </a>
+                );
+              })}
+            </div>
           </Reveal>
         </div>
 

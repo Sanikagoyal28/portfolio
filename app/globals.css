@@ -234,13 +234,36 @@ nav {
   display: grid;
   place-items: center;
   font-size: 0.95rem;
-  margin-left: 10px;
   transition: color 0.25s, border-color 0.25s, transform 0.25s;
 }
 #theme-btn:hover {
   color: var(--text);
   border-color: var(--border-hi);
   transform: rotate(20deg) scale(1.08);
+}
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.nav-toggle {
+  display: none; /* desktop: links are inline, no hamburger */
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  color: var(--muted);
+  width: 32px;
+  height: 32px;
+  place-items: center;
+  transition: color 0.25s, border-color 0.25s;
+}
+.nav-toggle svg {
+  width: 18px;
+  height: 18px;
+}
+.nav-toggle:hover {
+  color: var(--text);
+  border-color: var(--border-hi);
 }
 .logo {
   font-family: var(--font-display);
@@ -371,6 +394,12 @@ h1 .grad-text {
   margin-top: 40px;
   flex-wrap: wrap;
   align-items: center;
+}
+.hero-socials {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
 }
 .btn-primary {
   position: relative;
@@ -1047,9 +1076,6 @@ a.proj-visual {
   .about-grid {
     grid-template-columns: 1fr;
   }
-  .nav-links a:not(:nth-child(-n + 2)) {
-    display: none;
-  }
   .xp-card {
     padding: 30px 26px;
   }
@@ -1061,5 +1087,48 @@ a.proj-visual {
   }
   header.wrap {
     padding: 120px 24px 16px;
+  }
+}
+
+@media (max-width: 640px) {
+  /* Single-column skills so long tag rows can't force horizontal overflow */
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+  /* Collapse the nav links into a hamburger dropdown */
+  .nav-toggle {
+    display: grid;
+  }
+  .nav-links {
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    gap: 4px;
+    /* opaque so the hero content behind doesn't bleed through the menu */
+    background: var(--nav-bg);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    padding: 10px;
+    box-shadow: var(--shadow-nav);
+    display: none;
+  }
+  .nav-links.open {
+    display: flex;
+  }
+  .nav-links a {
+    width: 100%;
+    padding: 10px 16px;
+  }
+  /* keep the resume + all social icons tidy on small screens */
+  .hero-cta {
+    gap: 14px;
+  }
+  .hero-socials {
+    gap: 12px;
+    flex-wrap: nowrap;
   }
 }
